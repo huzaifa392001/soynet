@@ -30,20 +30,21 @@ header .cart-icon {
     margin-bottom: 100px;
 }
 
-.main-section {
-    background-image: url(../images/Mask\ Group.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-section img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
     height: 400px;
+    z-index: -1;
 }
 
 .main-section .main-heading {
-    font-size: 80px;
-    font-weight: 700;
+    font-family: Roboto-bold;
+    font-weight: bold;
+    font-size: 70px;
     line-height: 100px;
-    width: 60%;
+    color: #000000;
     padding-top: 300px;
-    font-family: roboto-bold;
 }
 
 .main-section .main-para {
@@ -92,7 +93,7 @@ header .cart-icon {
 }
 
 .about-section {
-    margin-top: 25%;
+    margin-top: 200px;
 }
 
 .about-heading {
@@ -102,6 +103,18 @@ header .cart-icon {
     font-family: roboto-bold;
 }
 
+.about-section .content {
+    padding-top: 100px;
+}
+
+.about-para {
+    width: 50%;
+}
+
+.about-section .row {
+    padding-top: 80px;
+}
+
 .about-section span {
     font-weight: bold;
 }
@@ -109,7 +122,11 @@ header .cart-icon {
 .about-section .deploy {
     color: #555;
     font-size: 18px;
-    margin-top: 65px;
+}
+
+.about-section img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #b3b3b3;
 }
 
 .about-section .provide-heading {
@@ -133,68 +150,92 @@ header .cart-icon {
 }
 
 .soynet-section {
+    padding-top: 180px;
     position: relative;
 }
 
 .soynet-section .soynet-para {
-    width: 57%;
+    width: 60%;
 }
 
 .soynet-section span {
     font-weight: bold;
 }
 
-.soynet-section .play-button {
-    position: absolute;
-    top: 55%;
-    left: 45%;
+.customer-section {
+    padding-top: 180px;
 }
 
-.customer-section span {
+.customer-section p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.customer-section .card figure {
+    width: 100%;
+    height: 250px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.customer-section .card figure img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customer-section .card h1 {
+    font-family: Roboto-bold;
     font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
 }
 
-.customer-section .goverment {
-    position: relative;
+.customer-section .card .pill {
+    font-family: Roboto-bold;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #E36159;
+    background: rgba(227, 97, 89, 0.1);
+    border-radius: 5px;
+    padding: 0 6px;
+    height: fit-content;
+    margin-left: 10px;
 }
 
-.customer-section .republic {
-    position: absolute;
-    top: 27%;
-    left: 38%;
+.customer-section .card h6 {
+    font-weight: normal;
+    color: #000000;
+    margin-bottom: 20px;
 }
 
-.customer-section .republic-logo {
-    position: absolute;
-    top: 25%;
-    left: 22%;
+.customer-section .card a {
+    font-family: Roboto-bold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E36159;
+    text-decoration: none;
 }
 
-.customer-section .posco {
-    position: relative;
+.customer-section .card a i {
+    transition: all 0.4s ease-in-out;
+    margin-left: 5px;
 }
 
-.customer-section .posco-logo {
-    position: absolute;
-    top: 27%;
-    left: 27%;
+.customer-section .card a:hover i {
+    margin-left: 10px;
 }
 
-.customer-section .hyundai {
-    position: relative;
-}
-
-.customer-section .hyundai-logo {
-    position: absolute;
-    top: 27%;
-    left: 27%;
-}
-
-.customer-section .security-link {
-    margin-inline: auto;
-    text-decoration: auto;
-    color: #e36159;
-    background-color: rgba(227, 97, 89, 0.1);
+.partner-section {
+    padding-top: 180px;
 }
 
 .partner-section .partner-para {
@@ -205,98 +246,130 @@ header .cart-icon {
     font-weight: bold;
 }
 
+.partner-section img {
+    min-height: 60px;
+}
+
 .image-section {
     position: relative;
 }
 
-.image-section .mask-heading {
+.image-section .content {
     position: absolute;
-    top: 30%;
-    left: 38%;
-}
-
-.image-section .mask-main {
-    color: #fff;
-    margin-left: 38px;
-}
-
-.image-section .mask-main-heading {
-    font-size: 45px;
-    font-weight: 700;
-    color: #fff;
-    width: 53%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.image-section .contact-btn {
-    background-color: #ffffff;
-    border-radius: 1px;
-    border: 1px solid #fafafa;
-    display: inline-block;
-    cursor: pointer;
-    color: #e36059;
-    font-family: Arial;
-    font-size: 15px;
+.image-section .mask-main {
+    font-family: Roboto-bold;
     font-weight: bold;
-    padding: 10px 35px;
-    text-decoration: none;
-    text-shadow: 0px 0px 0px #ffffff;
-    position: absolute;
-    bottom: 19%;
-    left: 44%;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.image-section .mask-main-heading {
+    font-family: Roboto-bold;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+.image-section .contact-btn {
+    font-family: Roboto-bold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E36159;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 15px 45px;
 }
 
 footer {
-    background-color: #000000;
-    color: #fff;
-    padding-bottom: 60px;
-    margin-top: 100px;
+    padding-top: 60px;
+    background-color: #000;
+    padding-bottom: 25px;
 }
 
-footer h5 {
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-footer p {
-    font-weight: 300;
+footer h6 {
+    font-family: Roboto-bold;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
 }
 
 footer ul {
     list-style: none;
 }
 
-footer ul li {
-    margin-bottom: 10px;
+footer .para {
+    width: 80%;
 }
 
+footer p,
 footer a {
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
     text-decoration: none;
-    color: #fff;
+    transition: all 0.4s ease-in-out;
 }
 
-footer hr {
-    color: #e36059;
+footer a:hover {
+    color: #e36159;
 }
 
-footer h6 {
-    opacity: 0.5;
-    font-weight: 100;
+footer .divider {
+    height: 2px;
+    background: #E36159;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 15px;
 }
 
-footer .d-flex {
-    justify-content: space-between;
+footer a i {
+    color: #000;
+    background: #Fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
 }
 
-footer .footer-icons {
-    margin-right: 15%;
+footer .accordion-item {
+    background: transparent;
 }
 
-footer .footer-icon {
-    width: 30%;
+footer .accordion-header {
+    background: transparent;
 }
 
-.blog-main {}
+footer .accordion-item button {
+    background: transparent !important;
+    color: #fff !important;
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+footer .accordion-button:focus {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    box-shadow: none;
+    outline: none;
+}
 
 .blog-main h1 {
     font-weight: bold;
@@ -400,17 +473,18 @@ p.date {
     margin-bottom: 30px;
 }
 
-.signin-section .input-cont {
+.input-cont {
     margin-bottom: 20px;
 }
 
-.signin-section .input-cont label {
+.input-cont label {
     font-size: 16px;
     color: #000000;
     margin-bottom: 10px;
 }
 
-.signin-section .input-cont input {
+.input-cont input,
+.input-cont textarea {
     background: #FFFFFF;
     border: 1.5px solid #EBEBEB;
     box-sizing: border-box;
@@ -421,7 +495,8 @@ p.date {
     padding: 15px 20px;
 }
 
-.signin-section .input-cont input:focus {
+.input-cont input:focus,
+.input-cont textarea:focus {
     outline: none;
 }
 
@@ -576,4 +651,209 @@ p.date {
     background: rgba(227, 97, 89, 0.1);
     border-radius: 3px;
     color: #E36159;
+}
+
+.price-section{
+    padding: 90px 0;
+}
+
+.price-section .card{
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #ddd;
+    min-height: 490px;
+}
+
+.price-section ul{
+    list-style: none;
+} 
+
+.price-section ul li{
+    margin-bottom: 10px;
+}
+
+.price-section h6 {
+    font-family: Roboto-bold;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+.price-section li {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.price-section li i {
+    color: #E36159;
+    margin-right: 10px;
+}
+
+.price-section .main-btn-1{
+    border-left: 0;
+    border-right: 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+}
+
+.contact-section{
+    padding-top: 100px;
+}
+
+.contact-section h1{
+    font-family: Roboto-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.contact-section p{
+    font-size: 15px;
+    color: #6B7684;
+}
+
+.contact-section h2{
+    font-family: Roboto-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+    margin: auto 0;
+}
+
+.contact-section .cont{
+    padding-top: 70px;
+}
+
+.contact-section ul{
+    list-style: none;
+    padding-top: 30px;
+}
+
+.contact-section ul h5{
+    font-family: roboto-bold;
+    font-weight: bold;
+}
+
+.contact-section ul p{
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-section .main-para {
+        width: 75%;
+    }
+
+    .about-section .content {
+        padding: 0;
+    }
+
+    .soynet-section .soynet-para {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .main-section .main-heading {
+        font-size: 60px;
+        line-height: 90px;
+    }
+
+    .main-section .main-para {
+        width: 100%;
+    }
+
+    .about-para {
+        width: 75%;
+    }
+
+    .about-section .content {
+        padding-top: 30px;
+    }
+
+    .customer-section p {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main-section img {
+        position: unset;
+    }
+
+    .main-section .main-heading {
+        padding-top: 60px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .main-section .main-para {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .about-heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-para {
+        width: 100%;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .about-section .provide-heading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about-section .provide-para {
+        width: 100%;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .soynet-section .soynet-para {
+        width: 100%;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .card .content h6 {
+        font-size: 14px;
+    }
+
+    .partner-section .partner-para {
+        width: 100%;
+        font-style: 14px;
+    }
+
+    .image-section .mask-main {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .image-section .content {
+        width: 100%;
+    }
+
+    .image-section .mask-main-heading {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .image-section .mask-img img {
+        height: 300px;
+        object-fit: cover;
+    }
 }

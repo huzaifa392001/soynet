@@ -21,53 +21,50 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo-default 1 (1).png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto">
-                        <li class="nav-item title-name">
-                            <a class="nav-link active title-name" aria-current="page" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item title-name">
-                            <a class="nav-link active title-name" href="market.html">Model Market</a>
-                        </li>
-
-                        <li class="nav-item title-name">
-                            <a class="nav-link  active  title-name" href="blog.html">Partners</a>
-                        </li>
-
-                        <li class="nav-item title-name">
-                            <a class="nav-link  active title-name" href="">Pricing</a>
-                        </li>
-
-                        <li class="nav-item dropdown title-name">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                SoyNet
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <i class="fas fa-shopping-cart cart-icon"></i>
-                        <a href="signin.html" class="main-btn-1" type="submit">Login / Sign Up</a>
-                    </form>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo-default 1 (1).png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item title-name">
+                <a class="nav-link active title-name" aria-current="page" href="index.html">About Us</a>
+              </li>
+              <li class="nav-item title-name">
+                <a class="nav-link active title-name" href="market.html">Model Market</a>
+              </li>
+  
+              <li class="nav-item title-name">
+                <a class="nav-link  active  title-name" href="#">Partners</a>
+              </li>
+  
+              <li class="nav-item title-name">
+                <a class="nav-link  active title-name" href="pricing.html">Pricing</a>
+              </li>
+  
+              <li class="nav-item dropdown title-name">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  SoyNet
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Case Study</a></li>
+                  <li><a class="dropdown-item" href="#">Career</a></li>
+                  <li><a class="dropdown-item" href="#">What is Soynet</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <i class="fas fa-shopping-cart cart-icon"></i>
+              <a href="signin.html" class="main-btn-1" type="submit">Login / Sign Up</a>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="swiper mySwiper">
@@ -243,44 +240,123 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 py-5">
-                    <h5>Logo</h5>
-                    <p>Soynet Inc. | CEO Name of the Founder</p>
-                    <p>No.513, 24, Kyungheedae-ro,</p>
-                    <p>Dongdaemun-gu, Seoul, Republic of</p>
-                    <p>Korea, Seoul, South Korea Business</p>
-                    <p>Registration Number: 854-26-00727</p>
-                </div>
-                <div class="col-lg-3 py-5">
-                    <h5>Company</h5>
-                    <ul class="p-0">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Modal Market</a></li>
-                        <li><a href="">Partners</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">SoyNet</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 py-5 ">
-                    <h5>Customer Service</h5>
-                    <a href="">Email: sales@soynet.io</a><br>
-                    <a href="">Collaboration: +82 10 8956 8157</a> <br>
-                    <a href="">Technical Support: support@soynet.io</a>
-
-                </div>
+      <div class="container">
+        <div class="accordion d-block d-lg-none" id="accordionExample">
+          <div class="accordion-item">
+            <h6 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Company
+              </button>
+            </h6>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="p-0">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">Model Market</a>
+                  </li>
+                  <li>
+                    <a href="">Partners</a>
+                  </li>
+                  <li>
+                    <a href="">Pricing</a>
+                  </li>
+                  <li class="m-0">
+                    <a href="">SoyNet</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <hr>
-            <div class="d-flex mx-4 ">
-                <h6 class="mx-5">© 2020 SoyNet ALL RIGHTS RESERVED</h6>
-                <div class="footer-icons">
-                    <img class="footer-icon" src="assets/images/Round icons (2).png" alt="">
-                    <img class="footer-icon" src="assets/images/Round icons (4).png" alt="">
-                    <img class="footer-icon" src="assets/images/Group 65.png" alt="">
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h6 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Customer Service
+              </button>
+            </h6>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="p-0">
+                  <li>
+                    <p>Email: sales@soynet.io</p>
+                  </li>
+                  <li>
+                  <li>
+                    <p>Collaboration: +82 10 8956 8157 </p>
+                  </li>
+                  <li>
+                    <p>Technical Support: support@soynet.io</p>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="row mt-lg-0 mt-5">
+          <div class="col-lg-5 col-12">
+            <h6>Logo</h6>
+            <p class="para">
+              Soynet Inc. | CEO Name of the Founder
+              No.513, 24, Kyungheedae-ro, Dongdaemun-gu, Seoul, Republic of Korea, Seoul, South Korea
+              Business Registration Number: 854-26-00727
+            </p>
+          </div>
+  
+          <div class="col-lg-3 d-lg-block d-none">
+            <ul class="p-0">
+              <h6>Company</h6>
+              <li>
+                <a href="">About Us</a>
+              </li>
+              <li>
+                <a href="">Model Market</a>
+              </li>
+              <li>
+                <a href="">Partners</a>
+              </li>
+              <li>
+                <a href="">Pricing</a>
+              </li>
+              <li class="m-0">
+                <a href="">SoyNet</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 d-lg-block d-none">
+            <ul class="p-0">
+              <h6>Customer Service</h6>
+              <li>
+                <p>Email: sales@soynet.io</p>
+              </li>
+              <li>
+              <li>
+                <p>Collaboration: +82 10 8956 8157 </p>
+              </li>
+              <li>
+                <p>Technical Support: support@soynet.io</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="d-md-flex justify-content-between">
+          <p class="light">© 2020 SoyNet ALL RIGHTS RESERVED</p>
+          <div class="d-flex icons mt-3 mt-md-0">
+            <a href=""><i class="m-0 fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
