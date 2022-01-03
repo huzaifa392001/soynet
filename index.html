@@ -5,77 +5,84 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing</title>
+  <title>Soynet</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/aos.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/logo-default 1 (1).png" alt=""></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item title-name">
-              <a class="nav-link active title-name" aria-current="page" href="index.html">About Us</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-tiles" href="about.html">About Us</a>
             </li>
-            <li class="nav-item title-name">
-              <a class="nav-link active title-name" href="market.html">Model Market</a>
+            <li class="nav-item">
+              <a class="nav-tiles" href="market.html">Model Market</a>
             </li>
-
-            <li class="nav-item title-name">
-              <a class="nav-link  active  title-name" href="#">Partners</a>
+            <li class="nav-item">
+              <a class="nav-tiles" href="partners.html">Partners</a>
             </li>
-
-            <li class="nav-item title-name">
-              <a class="nav-link  active title-name" href="pricing.html">Pricing</a>
+            <li class="nav-item">
+              <a class="nav-tiles" href="pricing.html">Pricing</a>
             </li>
-
-            <li class="nav-item dropdown title-name">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                SoyNet
+            <li class="nav-item dropdown">
+              <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Soynet
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                <li><a class="dropdown-item" href="#">Case Study</a></li>
-                <li><a class="dropdown-item" href="#">Career</a></li>
-                <li><a class="dropdown-item" href="#">What is Soynet</a></li>
+                <li class="my-2">
+                  <a class="dropdown-item m-0" href="blog.html">Blogs</a>
+                </li>
+                <li class="my-2">
+                  <a class="dropdown-item m-0" href="#">Case Study</a>
+                </li>
+                <li class="my-2">
+                  <a class="dropdown-item m-0" href="#">Career</a>
+                </li>
+                <li class="my-2">
+                  <a class="dropdown-item m-0" href="#">What is Soynet</a>
+                </li>
               </ul>
             </li>
           </ul>
-          <form class="d-flex">
-            <i class="fas fa-shopping-cart cart-icon"></i>
-            <a href="signin.html" class="main-btn-1" type="submit">Login / Sign Up</a>
-          </form>
+          <div class="d-flex">
+            <img src="assets/images/shopping-cart 1.png" class="cart" alt="">
+            <a href="signin.html" class="theme-btn-2">Login / SIgn Up</a>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 
   <section class="main-section">
-    <img src="assets/images/Mask Group.png" alt="">
+    <img src="assets/images/main-img.png" alt="">
     <div class="container">
-      <div class="content">
-        <h1 class="main-heading">SOYNET a S/W based AI<br>Inference Accelerator. </h1>
-        <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, eget id proin consequat
-          odio
-          ullamcorper habitasse. Elementum aliquam in justo proin sit id.</p>
+      <div class="content" data-aos="fade-down">
+        <h1>SOYNET a S/W based AI Inference Accelerator. </h1>
+        <p>
+          We provide S/W based general-purpose accelerator solution that can be used to accelerate various models used
+          for image processing/natural language/anomaly detection, etc.
+        </p>
         <div class=" d-flex">
-          <button class="main-btn" type="submit">Who Are We?</button>
-          <button class="main-btn-1 ms-3" type="submit">Contact Us</button>
+          <button class="theme-btn" type="submit">Who Are We?</button>
+          <button class="theme-btn-2 ms-3" type="submit">Contact Us</button>
         </div>
       </div>
     </div>
@@ -83,24 +90,26 @@
 
   <section class="about-section">
     <div class="container">
-      <h2 class="about-heading">About Us</h2>
-      <p class="about-para">
-        <span>SoyNet</span> Solution SoyNet is a high-speed reasoning (execution) engine developed based
-        on C/C++ designed to bring speed to your AI Inference and help your reduce time to market in AI. .
-      </p>
+      <div class="cont-heading text-md-center" data-aos="fade-up">
+        <h1>About Us</h1>
+        <h6>
+          Solution SoyNet is a high-speed reasoning (execution) engine developed based on C/C++ designed to bring speed
+          to your AI Inference and help your reduce time to market in AI.
+        </h6>
+      </div>
 
       <div class="row">
         <div class="col-lg-6">
-          <img class="w-100" src="assets/images/about1.jpg" alt="">
+          <img data-aos="fade-up" class="w-100" src="assets/images/about1.png" alt="">
         </div>
         <div class="col-lg-6">
           <div class="content">
-            <h2 class="provide-heading">Universal Accelerator</h2>
-            <p class="provide-para">SoyNet supports artificial intelligence models developed on any public frameworks
+            <h2>Universal Accelerator</h2>
+            <p>SoyNet supports artificial intelligence models developed on any public frameworks
               such
               as TensorFlow / PyTorch / Caffe used in training.
               SoyNet also supports the execution of models on OpenCL and NVIDIA's CUDA</p>
-            <a href="" class="learn-more">Learn More <i class="fas fa-greater-than learn-more-icon"></i> </a>
+            <a href="" class="learn-more">Learn More<i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -108,30 +117,30 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="content">
-            <h2 class="provide-heading">Speed up AI inferencing</h2>
-            <p class="provide-para">Increase the inference speed of your Models leveraging multicore of GPUs.
+            <h2>Speed up AI inferencing</h2>
+            <p>Increase the inference speed of your Models leveraging multicore of GPUs.
               Support GPU (CPU, and TPU coming soon)
               Simple API integration reduces complexity for application developers.</p>
-            <a href="" class="learn-more">Learn More <i class="fas fa-greater-than learn-more-icon"></i> </a>
+            <a href="" class="learn-more">Learn More<i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="col-lg-6 order-lg-last order-first">
-          <img class="w-100" src="assets/images/about22.jpg" alt="">
+          <img data-aos="fade-up" class="w-100" src="assets/images/about2.png" alt="">
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-6">
-          <img class="w-100" src="assets/images/about3.jpg" alt="">
+          <img data-aos="fade-up" class="w-100" src="assets/images/about3.png" alt="">
         </div>
         <div class="col-lg-6">
           <div class="content">
-            <h2 class="provide-heading">Model Market</h2>
-            <p class="provide-para">
+            <h2>Model Market</h2>
+            <p>
               Model Market helps you select highly optimized public models by SoyNet.<br>
               Check the performance improvement with SoyNet and other frameworks.
             </p>
-            <a href="" class="learn-more">Learn More <i class="fas fa-greater-than learn-more-icon"></i> </a>
+            <a href="" class="learn-more">Learn More<i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -139,32 +148,32 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="content">
-            <h2 class="provide-heading">Technical Support </h2>
-            <p class="provide-para">
+            <h2>Soynet Support</h2>
+            <p>
               Paid Online and Email support are provided for all models in Model Market.<br>
               On-site support is available to cater to special request using our Models.<br>
               Premium subscription allows use of SoyNet with your Custom Models.
             </p>
-            <a href="" class="learn-more">Learn More <i class="fas fa-greater-than learn-more-icon"></i> </a>
+            <a href="" class="learn-more">Learn More<i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="col-lg-6 order-lg-last order-first">
-          <img class="w-100" src="assets/images/about1.jpg" alt="">
+          <img data-aos="fade-up" class="w-100" src="assets/images/about4.png" alt="">
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-6">
-          <img class="w-100" src="assets/images/about22.jpg" alt="">
+          <img data-aos="fade-up" class="w-100" src="assets/images/about5.png" alt="">
         </div>
         <div class="col-lg-6">
           <div class="content">
-            <h2 class="provide-heading">Deploy Anywhere</h2>
-            <p class="provide-para">
+            <h2>Deploy Anywhere</h2>
+            <p>
               SoyNet optimized models can be deployed on cloud-server, On-premises server. <br>
               Our models can be embedded in edge devices like Jetson Nano that can be trained on PC
             </p>
-            <a href="" class="learn-more">Learn More <i class="fas fa-greater-than learn-more-icon"></i> </a>
+            <a href="" class="learn-more">Learn More<i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -174,36 +183,37 @@
 
   <section class="soynet-section">
     <div class="container">
-      <h1 class="about-heading">
-        What is SoyNet
-      </h1>
-      <p class="soynet-para my-4">
-        General-purpose AI frameworks are heavy and slow to apply to service execution. 
-        SoyNet can run any artificial intelligence models trained on Tensor/Pytorch/Caffe Etc making it faster consuming
-        less memory.
-      </p>
-      <figure class="m-0">
+      <div class="cont-heading text-md-center" data-aos="fade-up">
+        <h1>
+          What is SoyNet
+        </h1>
+        <h6>
+          General-purpose AI frameworks are heavy and slow to apply to service execution. 
+          SoyNet can run any artificial intelligence models trained on Tensor/Pytorch/Caffe Etc making it faster
+          consuming
+          less memory.
+        </h6>
+      </div>
+
+      <figure data-aos="fade-down">
         <video class="w-100" controls>
           <source src="assets/images/SoyNet_intro_english_caption.mp4" type="video/mp4">
         </video>
-        <!-- <img class="w-100" src="assets/images/unsplash_LqKhnDzSF-8.png" alt="">
-        <img class="play-button" src="assets/images/Group 1.png" alt=""> -->
       </figure>
     </div>
   </section>
 
   <section class="customer-section">
     <div class="container">
-      <h1 class="about-heading">Customers</h1>
-      <p class="w-50">
-        Customers across all the industries are using SoyNet.<br>
-        Check our Case studies.
-
-      </p>
+      <div class="cont-heading text-md-center" data-aos="fade-up">
+        <h1>Customers</h1>
+        <h6>Customers across all the industries are using SoyNet.<br>
+          Check our Case studies.</h6>
+      </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-          <div class="card border-0">
+          <div class="card border-0" data-aos="fade-up">
             <figure class="m-0">
               <img src="assets/images/gok.png" alt="">
             </figure>
@@ -225,7 +235,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-          <div class="card border-0">
+          <div class="card border-0" data-aos="fade-up">
             <figure class="m-0">
               <img src="assets/images/800px-POSCO_logo 1.png" alt="">
             </figure>
@@ -247,7 +257,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-          <div class="card border-0">
+          <div class="card border-0" data-aos="fade-up">
             <figure class="m-0">
               <img src="assets/images/logo 1.png" alt="">
             </figure>
@@ -271,54 +281,159 @@
     </div>
   </section>
 
+  <section class="faq-section">
+    <div class="container">
+      <div class="cont-heading text-md-center" data-aos="fade-up">
+        <h1>Frequently Asked Questions</h1>
+        <h6>Customers across all the industries are using SoyNet. <br>
+          Check our Case studies.
+        </h6>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" s type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              What is a SoyNet?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ornare tellus ullamcorper arcu, faucibus
+                consectetur gravida nisl. Egestas rhoncus, lectus vulputate curabitur. Venenatis mauris diam pulvinar
+                mus varius.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="haedingTwo">
+            <button class="accordion-button collapsed" s type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What is a SoyNet?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="haedingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ornare tellus ullamcorper arcu, faucibus
+                consectetur gravida nisl. Egestas rhoncus, lectus vulputate curabitur. Venenatis mauris diam pulvinar
+                mus varius.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" s type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What is a SoyNet?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ornare tellus ullamcorper arcu, faucibus
+                consectetur gravida nisl. Egestas rhoncus, lectus vulputate curabitur. Venenatis mauris diam pulvinar
+                mus varius.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" s type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What is a SoyNet?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ornare tellus ullamcorper arcu, faucibus
+                consectetur gravida nisl. Egestas rhoncus, lectus vulputate curabitur. Venenatis mauris diam pulvinar
+                mus varius.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" s type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What is a SoyNet?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ornare tellus ullamcorper arcu, faucibus
+                consectetur gravida nisl. Egestas rhoncus, lectus vulputate curabitur. Venenatis mauris diam pulvinar
+                mus varius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="partner-section">
     <div class="container">
-      <h1 class="about-heading">Partners</h1>
-      <p class="partner-para my-4">
-        We are proud partners with Esteemed<br>organizations to explore new markets.
-      </p>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="https://www.hyundai-steel.com/en/index.hds">
-              <img src="assets/images/logo 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="http://saltlux.com">
-              <img src="assets/images/saltlux 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="https://www.neuromeka.com/about">
-              <img src="assets/images/neuromeka 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="http://medicalstandard.com/">
-              <img src="assets/images/medicalstandard 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="http://www.seculayer.co.kr/">
-              <img src="assets/images/seculayer 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="https://www.vivans.net/">
-              <img src="assets/images/vivans 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="http://www.aissgo.com">
-              <img src="assets/images/aissgo 1.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="https://hanatek.co.kr/kor/company/company.php">
-              <img src="assets/images/Group.png" alt="">
-            </a>
-          </div>
+      <div class="cont-heading text-md-center" data-aos="fade-up">
+        <h1>Partners</h1>
+        <h6>We are proud partners with Esteemed<br>organizations to explore new markets.</h6>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/hyundai.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/saltlux.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/neuromeka.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/medicalstandard.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/seculayer.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/vivans.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/aissgo.png" alt="">
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+          <figure>
+            <img class="w-auto m-auto" src="assets/images/hntech.png" alt="">
+          </figure>
         </div>
       </div>
     </div>
@@ -327,12 +442,14 @@
   <section class="image-section">
     <div>
       <div class="mask-img">
-        <img class="w-100" src="assets/images/Mask Group (2).png" alt="">
+        <img class="w-100" src="assets/images/bottom-img.png" alt="">
       </div>
       <div class="content">
-        <h6 class="mask-main">AI ACCELERATION PLATFORM</h6>
+        <div data-aos="fade-up">
+          <h6 class="mask-main">AI ACCELERATION PLATFORM</h6>
         <h1 class="mask-main-heading">AI Solution for<br>your busines</h1>
         <button class="contact-btn">Contact Us</button>
+        </div>
       </div>
     </div>
   </section>
@@ -458,28 +575,12 @@
   </footer>
 
 </body>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    loop: true,
-    breakpoints: {
-      996: {
-        slidesPerView: 4,
-        spaceBetweenSlides: 50
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetweenSlides: 50
-      },
-      410: {
-        slidesPerView: 2,
-        spaceBetweenSlides: 50
-      }
-    }
+  AOS.init({
+    duration: 1500,
   });
 </script>
-<script src="assets/js/bootstrap.bundle.js"></script>
 
 </html>

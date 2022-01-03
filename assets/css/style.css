@@ -1,4 +1,14 @@
 @font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
     font-family: roboto-bold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
@@ -8,145 +18,193 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
-* {
+body {
+    font-family: poppins-regular;
+}
+
+.cont-heading {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cont-heading h1 {
+    font-family: Poppins-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #EA5B33;
+}
+
+.cont-heading h6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.theme-btn {
+    font-family: roboto-bold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 16px 40px;
+    background: #E36159;
+    border: 1px solid #E36159;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.theme-btn:hover {
+    background: #FFFFFF;
+    color: #E36159;
+}
+
+.theme-btn-2 {
+    font-family: roboto-bold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E36159;
+    padding: 16px 40px;
+    background: #FFFFFF;
+    border: 1px solid #E36159;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.theme-btn-2:hover {
+    background: #E36159;
+    color: #FFFFFF;
+}
+
+header nav li .nav-tiles,
+header nav li a {
+    margin: 0 20px;
     font-family: roboto-regular;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
 }
 
-header .cart-icon {
+header nav li a:hover {
+    color: #000000;
+}
+
+header nav li .nav-tiles::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #000;
+    transition: all 0.4s ease;
+}
+
+header nav li .nav-tiles:hover,
+header nav li .nav-tiles.active {
+    color: #000000;
+    font-weight: 600;
+}
+
+header nav li .nav-tiles:hover::before,
+header nav li .nav-tiles.active::before {
+    width: 100%;
+}
+
+header .cart {
+    height: fit-content;
     margin: auto;
-    margin-right: 16px;
-    font-size: 20px;
-}
-
-.title-name {
-    margin-left: 30px;
-}
-
-.title--name {
-    margin: auto;
-}
-
-.inner-header {
-    margin-bottom: 100px;
+    margin-right: 20px;
 }
 
 .main-section img {
     width: 100%;
     object-fit: cover;
+    object-position: top;
     position: absolute;
     height: 400px;
     z-index: -1;
 }
 
-.main-section .main-heading {
+.main-section .content h1 {
     font-family: Roboto-bold;
     font-weight: bold;
     font-size: 70px;
     line-height: 100px;
     color: #000000;
+    margin: 0;
     padding-top: 300px;
 }
 
-.main-section .main-para {
+.main-section .content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 5px;
     width: 50%;
-    margin-top: 25px;
-}
-
-.main-btn {
-    background-color: #e36059;
-    border-radius: 2px;
-    border: 1px solid #e36059;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 14px;
-    padding: 15px 38px;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: all 0.4s ease-in-out;
-}
-
-.main-btn:hover {
-    background-color: #fff;
-    color: #e36059;
-}
-
-.main-btn-1 {
-    background-color: #ffffff;
-    border-radius: 2px;
-    border: 1px solid #e36059;
-    display: inline-block;
-    cursor: pointer;
-    color: #e36059;
-    font-family: Arial;
-    font-size: 14px;
-    padding: 15px 38px;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: all 0.4s ease-in-out;
-}
-
-.main-btn-1:hover {
-    background-color: #e36059;
-    color: #fff;
 }
 
 .about-section {
-    margin-top: 200px;
-}
-
-.about-heading {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffbb00;
-    font-family: roboto-bold;
+    padding-top: 300px;
 }
 
 .about-section .content {
     padding-top: 100px;
 }
 
-.about-para {
-    width: 50%;
-}
-
 .about-section .row {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
-.about-section span {
+.about-section .content h2 {
+    font-family: Poppins-bold;
     font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 5px;
 }
 
-.about-section .deploy {
-    color: #555;
-    font-size: 18px;
+.about-section .content p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.about-section .content .learn-more {
+    font-family: Poppins-bold;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E36159;
+}
+
+.about-section .content .learn-more:hover i {
+    margin-left: 10px;
+}
+
+.about-section .content .learn-more i {
+    margin-left: 5px;
+    transition: all 0.4s ease-in-out;
 }
 
 .about-section img {
+    box-shadow: 2px 2px 10px #333;
     border-radius: 10px;
-    box-shadow: 2px 2px 15px #b3b3b3;
-}
-
-.about-section .provide-heading {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.about-section .provide-para {
-    width: 85%;
-}
-
-.learn-more {
-    text-decoration: none;
-    color: #e36159;
-    margin-top: 20px;
-}
-
-.about-section .learn-more-icon {
-    font-size: 12px;
-    margin-left: 2px;
 }
 
 .soynet-section {
@@ -154,23 +212,12 @@ header .cart-icon {
     position: relative;
 }
 
-.soynet-section .soynet-para {
-    width: 60%;
-}
-
-.soynet-section span {
-    font-weight: bold;
+.soynet-section figure {
+    margin: 60px 0 0;
 }
 
 .customer-section {
     padding-top: 180px;
-}
-
-.customer-section p {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    color: #000000;
 }
 
 .customer-section .card figure {
@@ -234,6 +281,51 @@ header .cart-icon {
     margin-left: 10px;
 }
 
+.faq-section {
+    padding-top: 180px;
+}
+
+.faq-section .accordion {
+    padding-top: 60px;
+}
+
+.faq-section .accordion .accordion-item {
+    border: 0;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.faq-section .accordion .accordion-item .accordion-button {
+    font-family: poppins-bold;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.faq-section .accordion .accordion-item .accordion-button:focus {
+    border: 0;
+    box-shadow: none;
+}
+
+.faq-section .accordion .accordion-item .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.faq-section .accordion .accordion-item .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.faq-section .accordion .accordion-item .accordion-body p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #7E7E7E;
+}
+
 .partner-section {
     padding-top: 180px;
 }
@@ -246,11 +338,19 @@ header .cart-icon {
     font-weight: bold;
 }
 
+.partner-section figure {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
 .partner-section img {
-    min-height: 60px;
+    width: fit-content;
+    margin: auto;
 }
 
 .image-section {
+    padding-top: 180px;
     position: relative;
 }
 
@@ -653,22 +753,22 @@ p.date {
     color: #E36159;
 }
 
-.price-section{
+.price-section {
     padding: 90px 0;
 }
 
-.price-section .card{
+.price-section .card {
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 15px #ddd;
     min-height: 490px;
 }
 
-.price-section ul{
+.price-section ul {
     list-style: none;
-} 
+}
 
-.price-section ul li{
+.price-section ul li {
     margin-bottom: 10px;
 }
 
@@ -692,7 +792,7 @@ p.date {
     margin-right: 10px;
 }
 
-.price-section .main-btn-1{
+.price-section .main-btn-1 {
     border-left: 0;
     border-right: 0;
     position: absolute;
@@ -702,11 +802,11 @@ p.date {
     border-radius: 0;
 }
 
-.contact-section{
+.contact-section {
     padding-top: 100px;
 }
 
-.contact-section h1{
+.contact-section h1 {
     font-family: Roboto-bold;
     font-style: normal;
     font-weight: bold;
@@ -715,12 +815,12 @@ p.date {
     color: #000000;
 }
 
-.contact-section p{
+.contact-section p {
     font-size: 15px;
     color: #6B7684;
 }
 
-.contact-section h2{
+.contact-section h2 {
     font-family: Roboto-bold;
     font-style: normal;
     font-weight: bold;
@@ -730,26 +830,26 @@ p.date {
     margin: auto 0;
 }
 
-.contact-section .cont{
+.contact-section .cont {
     padding-top: 70px;
 }
 
-.contact-section ul{
+.contact-section ul {
     list-style: none;
     padding-top: 30px;
 }
 
-.contact-section ul h5{
+.contact-section ul h5 {
     font-family: roboto-bold;
     font-weight: bold;
 }
 
-.contact-section ul p{
+.contact-section ul p {
     margin-left: 15px;
 }
 
 @media screen and (max-width: 1024px) {
-    .main-section .main-para {
+    .main-section .content p {
         width: 75%;
     }
 
@@ -757,31 +857,33 @@ p.date {
         padding: 0;
     }
 
-    .soynet-section .soynet-para {
+    .cont-heading {
         width: 75%;
+    }
+
+    .image-section .content {
+        top: 75%;
+        transform: translate(-50%, -75%);
     }
 }
 
 @media screen and (max-width: 996px) {
-    .main-section .main-heading {
+    .main-section .content h1 {
         font-size: 60px;
         line-height: 90px;
     }
 
-    .main-section .main-para {
+    .main-section .content p {
         width: 100%;
     }
 
-    .about-para {
-        width: 75%;
+    .about-section .content{
+        padding-top: 50px;
     }
 
-    .about-section .content {
-        padding-top: 30px;
-    }
-
-    .customer-section p {
-        width: 100% !important;
+    .image-section .content {
+        top: 90%;
+        transform: translate(-50%, -90%);
     }
 }
 
@@ -790,26 +892,27 @@ p.date {
         position: unset;
     }
 
-    .main-section .main-heading {
+    .main-section .content {
+        padding-top: 50px;
+    }
+
+    .main-section .content h1 {
         padding-top: 60px;
         font-size: 30px;
         line-height: 45px;
     }
 
-    .main-section .main-para {
+    .main-section .content p {
         font-size: 14px;
         line-height: 30px;
     }
 
-    .about-heading {
-        font-size: 24px;
-        line-height: 28px;
-    }
-
-    .about-para {
+    .cont-heading {
         width: 100%;
-        font-size: 14px;
-        line-height: 30px;
+    }
+
+    .cont-heading h6 br{
+        display: none;
     }
 
     .about-section .provide-heading {
